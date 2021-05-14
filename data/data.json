@@ -1,0 +1,18 @@
+{
+    "0":{
+        "title": "Balage ist szándékosan nem figyel oda",
+        "text": "Balage bár megpróbálkozott azzal, hogy segítsen, azt a kérdést tette fel: \"De akkor ez a json mire jó?\"",
+        "path1": {
+            "text": "Csinálsz egy példát neki",
+            "path": 216
+        },
+        "path2": {
+            "text": "Ignorálod, mint ahogy ő szokott",
+            "path": 120
+        },
+        "path3": {
+            "text": "\"Hmm...\"",
+            "path": 10
+        }
+    }
+}
