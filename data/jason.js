@@ -26,5 +26,8 @@ var data = {
       "answerType":"typeAnswer", //pickOne, typeAnswer
       "correctAnswers":["Balázs","Marci", "Máté"] 
     }
+  },
+  "end of all":{
+    "correctWordsForAllPaths":["ASDFA", "EDGEEDFSE", "ASFREESDGTR"] 
   }
 }
