@@ -28,6 +28,6 @@ var data = {
     }
   },
   "end of all":{
-    "correctWordsForAllPaths":["ASDFA", "EDGEEDFSE", "ASFREESDGTR"] 
+    "correctWordsForAllPaths":["ASDFA", "EDGEEDFSE", "ASFREESDGTR"] //yes
   }
 }

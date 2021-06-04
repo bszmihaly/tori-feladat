@@ -21,6 +21,8 @@ function CreateGameFieldForYear(year, id){
 
 function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
 
+    //DELETE previous question html objects please, so there wont be overfill issues
+
     var questionData = data[year][id];
     if(questionData.answerType == "pickOne"){
         //Check answer correctness
@@ -30,6 +32,8 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
             //EPIC FAIL DO THE CIRCLE
         }
     }else if(questionData.answerType == "typeAnswer"){
+        //text to lowercase and stuff for compatibility
+
         //Check answer correctness
         if(questionData.correctAnswers.includes(text)){
             //SUCCESS GO TO NEXT YEAR
