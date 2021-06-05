@@ -9,13 +9,17 @@ function CreateGameFieldForYear(year, id){
     var questionData = localdata[year][id];
     if(questionData.questionType == "question"){
         //Display question
+        //alert(questionData.question);
     }else if(questionData.questionType == "embed"){
         //Display learningapps etc.
+        //alert(questionData.embedSource);
     }
     if(questionData.answerType == "pickOne"){
         //Display 3 answers
+        //alert(questionData.answers);
     }else if(questionData.answerType == "typeAnswer"){
         //textInputfield
+        //alert(questionData.correctAnswers);
     }
 }
 
@@ -44,6 +48,7 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
 }
 
 function DoTheStart(){
+    CreateGameFieldForYear(1700, 0);
 
 }
 
