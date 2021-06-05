@@ -63,7 +63,6 @@ body{
     width:calc(100% - 7.5px);
     height: calc(33% - 7.5px);
     margin-left: 2.5px;
-    margin-top: 2.5px;
 }
 
 #lettersField{
