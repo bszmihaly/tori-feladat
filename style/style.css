@@ -22,6 +22,17 @@ body{
     height: 10%;
     background-color: #FF0000;
 }
+#container2{
+    left:0;
+    top:10%;
+    height:90%;
+    width:100%;
+}
+.asd{
+    display: inline-block;
+    height: 90%;
+    width: 100%;
+}
 #lettersField{
     left:0;
     top:10%;
@@ -30,12 +41,12 @@ body{
     height: 90%;
 }
 #gameArea{
-    display:inline;
     background-color:#000000;
     top:10%;
     left:33%;
     height:90%;
     width:67%;
+    float:right;
 }
 #questionField{
     top:0;
