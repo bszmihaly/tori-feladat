@@ -4,8 +4,7 @@ var globalYear;
 function CreateGameFieldForYear(year, id){
     var questionArea = document.getElementById("questionRow");
     var answerArea = document.getElementById("answerRow");
-
-
+    alert(localdata[year].title);
     var questionData = localdata[year][id];
     if(questionData.questionType == "question"){
         //Display question
@@ -32,8 +31,10 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
         //Check answer correctness
         if(questionData.answers[0] == text){
             //SUCCESS GO TO NEXT YEAR
+            CreateGameFieldForYear(year+1, 0)
         }else{
             //EPIC FAIL DO THE CIRCLE
+            CreateGameFieldForYear(year, (id+1)%3)
         }
     }else if(questionData.answerType == "typeAnswer"){
         //text to lowercase and stuff for compatibility
@@ -41,14 +42,16 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
         //Check answer correctness
         if(questionData.correctAnswers.includes(text)){
             //SUCCESS GO TO NEXT YEAR
+            CreateGameFieldForYear(year+1, 0)
         }else{
             //EPIC FAIL DO THE CIRCLE
+            CreateGameFieldForYear(year, (id+1)%3)
         }
     }
 }
 
 function DoTheStart(){
-    CreateGameFieldForYear(1700, 0);
+    CreateGameFieldForYear(0, 0);
 
 }
 
