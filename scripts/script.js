@@ -4,7 +4,7 @@ var globalYear;
 function CreateGameFieldForYear(year, id){
     var questionArea = document.getElementById("questionRow");
     var answerArea = document.getElementById("answerRow");
-    alert(localdata[year].title);
+    //alert(localdata[year].title);
     var questionData = localdata[year][id];
     if(questionData.questionType == "question"){
         //Display question

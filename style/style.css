@@ -15,36 +15,25 @@ body{
     width: 100%;
     z-index:1;
 }
+.fakeBorder{
+    margin: 5px;
+}
 .gameStyle{
     background-color: rgb(170, 111, 52);
-    border-width: 5px;
-    border-color: #332e2e;
 }
 #yearField{
-    
     left:0;
     top:0;
     width: 100%;
     height: 10%;
     background-color: #FF0000;
 }
-#container2{
-    left:0;
-    top:10%;
-    height:90%;
-    width:100%;
-}
-.asd{
+.inlineArea{
     display: inline-block;
     height: 90%;
     width: 100%;
 }
-#lettersField{
-    left:0;
-    top:10%;
-    width: 33%;
-    height: 90%;
-}
+
 #gameArea{
     top:10%;
     left:33%;
@@ -52,15 +41,46 @@ body{
     width:67%;
     float:right;
 }
+
+#lettersFieldFakeBorder{
+    left:0;
+    top:10%;
+    width: calc(33% - 7.5px);
+    height: calc(90% - 10px);
+    margin-right: 2.5px;
+}
+#questionFieldFakeBorder{
+    top:0;
+    left:0;
+    width: calc(100% - 7.5px);
+    height: calc(67% - 7.5px);
+    margin-left: 2.5px;
+    margin-bottom: 2.5px;
+}
+#answerFieldFakeBorder{
+    top: calc(67% + 5px);
+    left:0;
+    width:calc(100% - 7.5px);
+    height: calc(33% - 7.5px);
+    margin-left: 2.5px;
+    margin-top: 2.5px;
+}
+
+#lettersField{
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
 #questionField{
     top:0;
     left:0;
     width:100%;
-    height: 67%;
+    height: 100%;
 }
 #answerField{
-    top:67%;
+    top:0;
     left:0;
     width:100%;
-    height: 33%;
+    height: 100%;
 }
