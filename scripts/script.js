@@ -6,7 +6,7 @@ function CreateGameFieldForYear(year, id){
     var answerArea = document.getElementById("answerRow");
 
 
-    var questionData = data[year][id];
+    var questionData = localdata[year][id];
     if(questionData.questionType == "question"){
         //Display question
     }else if(questionData.questionType == "embed"){
@@ -23,17 +23,17 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
 
     //DELETE previous question html objects please, so there wont be overfill issues
 
-    var questionData = data[year][id];
+    var questionData = localdata[year][id];
     if(questionData.answerType == "pickOne"){
         //Check answer correctness
-        if(questionData.answers["0"] == text){
+        if(questionData.answers[0] == text){
             //SUCCESS GO TO NEXT YEAR
         }else{
             //EPIC FAIL DO THE CIRCLE
         }
     }else if(questionData.answerType == "typeAnswer"){
         //text to lowercase and stuff for compatibility
-
+        text = text.toLowerCase();
         //Check answer correctness
         if(questionData.correctAnswers.includes(text)){
             //SUCCESS GO TO NEXT YEAR
@@ -42,3 +42,9 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
         }
     }
 }
+
+function DoTheStart(){
+
+}
+
+DoTheStart();

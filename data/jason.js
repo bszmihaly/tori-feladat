@@ -4,27 +4,19 @@ var data = {
       "questionType":"embed", //embed, question
       "embedSource":"https://link",
       "answerType":"pickOne", //pickOne, typeAnswer
-      "answers": {
-        "0":"Urgot",
-        "1": "Turgot",
-        "2": "Russzó"
-      }
+      "answers": ["urgot", "turgot", "russzo"] //first is the good one dont forget to randomize order on website
     },
     "1":{
       "questionType":"question", //embed, question
       "question": "Kicsoda fogja megírni ezeket a kérdéseket?",
       "answerType":"pickOne", //pickOne, typeAnswer
-      "answers": {
-        "0":"Balázs",
-        "1": "Marci",
-        "2": "Máté"
-      }
+      "answers": ["balazs", "mate", "marci"] //first is the good one dont forget to randomize order on website
     },
     "2":{
      "questionType":"question", //embed, question
       "question": "Kicsoda fogja megírni ezeket a kérdéseket?",
       "answerType":"typeAnswer", //pickOne, typeAnswer
-      "correctAnswers":["Balázs","Marci", "Máté"] 
+      "correctAnswers":["balazs","marci", "mate"] 
     }
   },
   "end of all":{
