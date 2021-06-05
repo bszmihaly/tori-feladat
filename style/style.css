@@ -100,17 +100,33 @@ body{
     width:100%;
     height: 100%;
 }
-#button1{
+#buttonHolder1{
+    width: 33%;
+    height: 100%;
     float:left;
+    background-color:red; 
+}
+#button1{
     height:100%;
-    width:33%;
+    width:100%;
+}
+#buttonHolder2{
+    width: 33%;
+    height: 100%;
+    margin:auto;
+    background-color:blue;
 }
 #button2{
     height:100%;
-    width:33%;
+    width:100%;
+}
+#buttonHolder3{
+    width: 33%;
+    height:100%;
+    float:right;
+    background-color:green;
 }
 #button3{
-    float:right;
     height:100%;
-    width:33%;
+    width:100%;
 }
