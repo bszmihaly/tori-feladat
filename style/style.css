@@ -91,6 +91,7 @@ body{
     font-size:40px;
     vertical-align:middle;
     font-family:Impact, fantasy;
+    letter-spacing:1px;
 }
 #questionField{
     top:0;
@@ -112,8 +113,8 @@ body{
     height: 100%;
     float:left;/*VSCODE says its useless, but it is useful*/
     /*CHANGE BETWEEN ANSWER TYPES*/
-    display: inherit;
-    visibility: visible;
+    display: none;
+    visibility: hidden;
     /*---------------------------*/
 }
 .button{
@@ -148,11 +149,12 @@ body{
     text-align:center;
     position:relative;
     /*CHANGE BETWEEN ANSWER TYPES*/
-    display: none;
-    visibility: hidden;
+    display: inherit;
+    visibility: visible;
     /*---------------------------*/
 }
 #input{
+    padding-left:20px;
     transition-duration:0.4s;
     outline:none;
     width:75%;
@@ -191,9 +193,24 @@ body{
     color:#FFFFFF;
     font-family:Impact,fantasy;
     font-size:25px;
+    letter-spacing:1px;
 }
 #inputButton:hover{
     background-color:#332e2e;
     color:peru;
     border-color:peru;
+}
+#questionHolder{
+    text-align:center;
+}
+#question{
+    font-size:30px;
+    color:white;
+    font-family:Impact, fantasy;
+    letter-spacing:1px;
+}
+#embed{
+    height:calc(100% - 38px - 16px);
+    width:100%;
+    top:30px;
 }
