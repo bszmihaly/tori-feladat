@@ -92,7 +92,7 @@ body{
     top:0;
     left:0;
     width:100%;
-    height: 100%;
+    height:100%;
 }
 #answerField{
     top:0;
@@ -100,7 +100,8 @@ body{
     width:100%;
     height: 100%;
 }
-.buttonHolder{
+/*3 option question*/
+/*.buttonHolder{
     display:inline-block;
     width: calc(100%/3);
     height: 100%;
@@ -112,11 +113,47 @@ body{
     width:100%;
     transition-duration:0.4s;
     border-color:#332e2e;
-    color:white;
+    color:#FFFFFF;
     font-family:Impact, fantasy;
     font-size:25px;
 }
 .button:hover{
-    background-color:#FF000000;
+    background-color:#332e2e;
     color:peru;
+}*/
+/*input question*/
+#formHolder{
+    text-align:center;
+    
+}
+#input{
+    transition-duration:0.4s;
+    outline:none;
+    width:75%;
+    padding: 20px;
+    background-color:peru;
+    border-color:#332e2e;
+    border-width:8px;
+    border-style:solid;
+    border-radius: 8px;
+}
+#input::placeholder{
+    color:white;
+}
+#input:focus{
+    background-color:#332e2e;
+    border-color:peru;
+}
+#input:focus::placeholder{
+    color:peru;;
+}
+#inputButton{
+    background-color:peru;
+    border-color:#332e2e;
+    color:#FFFFFF;
+}
+#inputButton:hover{
+    background-color:#332e2e;
+    color:peru;
+    border-color:peru;
 }

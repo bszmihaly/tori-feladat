@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div id="container">
-        <div id="yearField">
+    <div id="container"><!--stores the content and makes background-->
+        <div id="yearField"><!--shows which year we are in-->
         </div>
         <div class="inlineArea fakeBorder" id="lettersFieldFakeBorder">
             <div class="gameStyle" id="lettersField">
@@ -27,8 +27,9 @@
                 </div>
             </div>
             <div class="fakeBorder" id="answerFieldFakeBorder">
-                <div id="answerField">
-                    <div class="buttonHolder">
+                <div id="answerField" class="gameStyle">
+                    <!-- 3 option question -->
+                    <!--<div class="buttonHolder">
                         <button class="button">Answer1</button>
                     </div>
                     <div class="buttonHolder">
@@ -36,6 +37,13 @@
                     </div>
                     <div class="buttonHolder">
                         <button class="button">Answer3</button>
+                    </div>-->
+                    <!-- input question -->
+                    <div id="formHolder">
+                        <form id="form">
+                            <input id="input" type="text" placeholder="Válasz"/>
+                        </form>
+                        <button id="inputButton">Ellenőrzés</button>
                     </div>
                 </div>
             </div>
