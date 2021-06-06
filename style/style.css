@@ -128,13 +128,16 @@ body{
 }*/
 /*input question*/
 #formHolder{
+    top:calc(50% - 15% - 8px);
     text-align:center;
+    position:relative;
     
 }
 #input{
     transition-duration:0.4s;
     outline:none;
     width:75%;
+    height:30%;
     padding-top:2%;
     padding-bottom:2%;
     background-color:peru;
@@ -156,6 +159,7 @@ body{
     color:peru;
 }
 #inputButton{
+    height:30%;
     padding-top:2%;
     padding-bottom:2%;
     transition-duration:0.4s;
