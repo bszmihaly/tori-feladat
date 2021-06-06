@@ -145,13 +145,14 @@ body{
     border-width:8px;
     border-style:solid;
     border-radius: 8px;
-    color: peru;
+    color: white;
     font-size:25px;
 }
 #input::placeholder{
     color:white;
 }
 #input:focus{
+    color: peru;
     background-color:#332e2e;
     border-color:peru;
 }
