@@ -111,7 +111,10 @@ body{
     width: calc(100%/3);
     height: 100%;
     float:left;
+    /*CHANGE BETWEEN ANSWER TYPES*/
     display: inherit;
+    visibility: visible;
+    /*---------------------------*/
 }
 .button{
     border-style: solid;
@@ -143,7 +146,10 @@ body{
     top:calc(50% - 15% - 8px);
     text-align:center;
     position:relative;
+    /*CHANGE BETWEEN ANSWER TYPES*/
     display: none;
+    visibility: hidden;
+    /*---------------------------*/
 }
 #input{
     transition-duration:0.4s;
