@@ -102,34 +102,17 @@ body{
 }
 .buttonHolder{
     display:inline-block;
-}
-#buttonHolder1{
     width: calc(100%/3);
     height: 100%;
     float:left;
-    background-color:blue; 
 }
-#button1{
+.button{
     height:100%;
     width:100%;
+    transition-duration:0.4s;
+    border:none;
 }
-#buttonHolder2{
-    width: calc(100%/3);
-    height: 100%;
-    float:left;
-    background-color:yellow;
-}
-#button2{
-    height:100%;
-    width: 100%;
-}
-#buttonHolder3{
-    width: calc(100%/3);
-    height:100%;
-    float:left;
-    background-color:red;
-}
-#button3{
-    height:100%;
-    width:100%;
+.button:hover{
+    background-color:#FF000000;
+    color:white;
 }
