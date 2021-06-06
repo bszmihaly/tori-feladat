@@ -110,7 +110,7 @@ body{
     display:inline-block;
     width: calc(100%/3);
     height: 100%;
-    float:left;
+    float:left;/*VSCODE says its useless, but it is useful*/
     /*CHANGE BETWEEN ANSWER TYPES*/
     display: inherit;
     visibility: visible;
