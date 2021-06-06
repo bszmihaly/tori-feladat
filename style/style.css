@@ -107,12 +107,16 @@ body{
     float:left;
 }
 .button{
+    background-color:peru;
     height:100%;
     width:100%;
     transition-duration:0.4s;
     border-color:#332e2e;
+    color:white;
+    font-family:Impact, fantasy;
+    font-size:25px;
 }
 .button:hover{
     background-color:#FF000000;
-    color:white;
+    color:peru;
 }
