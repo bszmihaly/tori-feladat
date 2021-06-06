@@ -123,6 +123,7 @@ body{
     width:100%;
     transition-duration:0.4s;
     border-color:#332e2e;
+    border-width: 0;
     color:#FFFFFF;
     font-family:Impact, fantasy;
     font-size:25px;
@@ -132,14 +133,14 @@ body{
     color:peru;
 }
 #btn1{
-    border-right-width: 5px;
+    border-right-width: 4px;
 }
 #btn2{
-    border-left-width: 5px;
-    border-right-width: 5px;
+    border-left-width: 4px;
+    border-right-width: 4px;
 }
 #btn3{
-    border-left-width: 5px;
+    border-left-width: 4px;
 }
 /*input question*/
 #formHolder{
