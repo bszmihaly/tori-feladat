@@ -106,13 +106,15 @@ body{
     background-color: var(--bgcol);
 }
 /*3 option question*/
-/*.buttonHolder{
+.buttonHolder{
     display:inline-block;
     width: calc(100%/3);
     height: 100%;
     float:left;
+    display: inherit;
 }
 .button{
+    border-style: solid;
     background-color:peru;
     height:100%;
     width:100%;
@@ -125,13 +127,23 @@ body{
 .button:hover{
     background-color:#332e2e;
     color:peru;
-}*/
+}
+#btn1{
+    border-right-width: 5px;
+}
+#btn2{
+    border-left-width: 5px;
+    border-right-width: 5px;
+}
+#btn3{
+    border-left-width: 5px;
+}
 /*input question*/
 #formHolder{
     top:calc(50% - 15% - 8px);
     text-align:center;
     position:relative;
-    
+    display: none;
 }
 #input{
     transition-duration:0.4s;
