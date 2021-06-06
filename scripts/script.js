@@ -50,9 +50,11 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
     }
 }
 
-function DoTheStart(){
-    CreateGameFieldForYear(0, 0);
 
+function DoTheStart(){
+    
+    CreateGameFieldForYear(0, 0);
+    StartTheHappenings();
 }
 
 DoTheStart();
