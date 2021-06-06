@@ -100,31 +100,34 @@ body{
     width:100%;
     height: 100%;
 }
+.buttonHolder{
+    display:inline-block;
+}
 #buttonHolder1{
-    width: 33%;
+    width: calc(100%/3);
     height: 100%;
     float:left;
-    background-color:red; 
+    background-color:blue; 
 }
 #button1{
     height:100%;
     width:100%;
 }
 #buttonHolder2{
-    width: 33%;
+    width: calc(100%/3);
     height: 100%;
-    margin:auto;
-    background-color:blue;
+    float:left;
+    background-color:yellow;
 }
 #button2{
     height:100%;
-    width:100%;
+    width: 100%;
 }
 #buttonHolder3{
-    width: 33%;
+    width: calc(100%/3);
     height:100%;
-    float:right;
-    background-color:green;
+    float:left;
+    background-color:red;
 }
 #button3{
     height:100%;
