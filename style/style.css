@@ -110,7 +110,7 @@ body{
     height:100%;
     width:100%;
     transition-duration:0.4s;
-    border:none;
+    border-color:#332e2e;
 }
 .button:hover{
     background-color:#FF000000;
