@@ -2,12 +2,16 @@ var fromHolder = document.getElementById("formHolder");
 var buttonHolder = document.getElementById("buttonVisibility");
 
 var btns = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")];
+var sbmtbtn = document.getElementById("inputButton");
+var input = document.getElementById("input");
 
 var embed = document.getElementById("embed");
 var questionHolder = document.getElementById("questionHolder");
 
 
 var question = document.getElementById("question");
+
+var offset = Math.floor(Math.random()*3);
 
 function makeHidden(field){
     field.style.visibility = "hidden";
@@ -47,37 +51,39 @@ function CreateGameFieldForYear(year, id){
     }
     if(questionData.answerType == 0){
         //Display 3 answers
-        var offset = Math.floor(Math.random()*3);
+        offset = Math.floor(Math.random()*3);
         btns[0].innerText = questionData.answers[offset%3];
         btns[1].innerText = questionData.answers[(offset+1)%3];
         btns[2].innerText = questionData.answers[(offset+2)%3];
 
-        btns[0].addEventListener("click", ()=>{CheckAnswerCorrectnessAndRedirectToNext()});
-        btns[1].addEventListener("click", ()=>{});
-        btns[2].addEventListener("click", ()=>{});
+        btns[0].addEventListener("click", ()=>{CheckAnswerCorrectnessAndRedirectToNext(year, id, btns[0].innerText)});
+        btns[1].addEventListener("click", ()=>{CheckAnswerCorrectnessAndRedirectToNext(year, id, btns[1].innerText)});
+        btns[2].addEventListener("click", ()=>{CheckAnswerCorrectnessAndRedirectToNext(year, id, btns[2].innerText)});
         makeVisible(buttonHolder);
         //alert(questionData.answers);
     }else if(questionData.answerType == 1){
         //textInputfield
         makeVisible(fromHolder);
+        sbmtbtn.addEventListener("click", () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, input.innerText)});
         //alert(questionData.correctAnswers);
     }
 }
 
 function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
 
-    var questionData = localdata[year][id];
-    if(questionData.answerType == "pickOne"){
+    var questionData = data[year].data[id];
+    if(questionData.answerType == 0){
         //Check answer correctness
         if(questionData.answers[0] == text){
             //SUCCESS GO TO NEXT YEAR
             CreateGameFieldForYear(year+1, 0)
         }else{
             //EPIC FAIL DO THE CIRCLE
+            //btns[(offset*2)%3].style.backgroundColor = "green";
+            //setTimeout(function(){btns[offset%3].style.backgroundColor = "peru";btnpressed = false; CreateGameFieldForYear(year, (id+1)%3)}, 3000);
             CreateGameFieldForYear(year, (id+1)%3)
         }
-    }else if(questionData.answerType == "typeAnswer"){
-        //text to lowercase and stuff for compatibility
+    }else if(questionData.answerType == 1){
         text = text.toLowerCase();
         //Check answer correctness
         if(questionData.correctAnswers.includes(text)){
