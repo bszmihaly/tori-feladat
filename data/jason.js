@@ -1,5 +1,5 @@
 var data = {
-  "-10":{
+  /*"-10":{
     "title":"1700",
     "data":[{
       "questionType":1, //embed 1, question 0
@@ -17,68 +17,95 @@ var data = {
      "questionType":0, //embed 1, question 0
       "question": "2Kicsoda fogja megírni ezeket a kérdéseket?",
       "answerType":1, //pickOne 0, typeAnswer 1
-      "correctAnswers":["balazs","marci", "mate"] 
+      "answers":["balazs","marci", "mate"] 
     }]
-  },
+  },*/
   "0":{
-    "title": "Az Egyesült Államok - Kasza-Kovács Máté",
+    "title": "Az Egyesült Államok 1 - Kasza-Kovács Máté",
     "data":[{
-      "questionType": 0,
+      "questionType": "question",
       "question": "Melyik hajón érkeztek Amerikába az első telepesek?",
-      "answerType": 0,
+      "answerType": "pickOne",
       "answers": ["Mayflower", "Santa Maria", "Pinta"]
     },
     {
-      "questionType": 0,
+      "questionType": "question",
       "question": "Ki volt az Egyesült Államok első elnöke?",
-      "answerType": 0,
+      "answerType": "pickOne",
       "answers": ["George Washington", "Thomas Jefferson", "Abraham Lincoln"]
     },
     {
-      "questionType": 0,
+      "questionType": "question",
       "question": "Ki volt az Amerikai Egyesült Államok harmadik elnöke?",
-      "answerType": 0,
+      "answerType": "pickOne",
       "answers": ["Thomas Jefferson", "George Washington", "Theodore Roosevelt"]
     }]
   },
   "1":{
-    "title": "A Függetlenségi nyilatkozat - Kasza-Kovács Máté",
+    "title": "A Függetlenségi háború - Kasza-Kovács Máté",
     "data":[{
-      "questionType": 0,
+      "questionType": "question",
       "question": "Hol volt az Amerikai függetlenségi háború döntő csatája?",
-      "answerType": 0,
+      "answerType": "pickOne",
       "answers": ["Yorktown", "Gettysburg", "New York"]
     },
     {
-      "questionType": 0,
+      "questionType": "question",
       "question": "Hol volt a híres teadélután 1773-ban?",
-      "answerType": 0,
-      "answers": ["Boston", "Washington", "New York"]
+      "answerType": "typeAnswer",
+      "answers": ["Boston"]
     },
     {
-      "questionType": 0,
+      "questionType": "question",
       "question": "Mikor adták ki a Függetlenségi Nyilatkozatot?",
-      "answerType": 0,
+      "answerType": "pickOne",
       "answers": ["1776 július 4.", "1773 december 16.", "1789 május 5."]
     }]
   },
-  "end of all":{
-    "correctWordsForAllPaths":["ASDFA", "EDGEEDFSE", "ASFREESDGTR"] //yes
-  }
+  "2":{
+    "title": "Az Egyesült Államok 2 - Kasza-Kovács Máté",
+    "data":[{
+      "questionType": "question",
+      "question": "Kik nem támogatták az Egyesült Államok függetlenségét?",
+      "answerType": "pickOne",
+      "answers": ["Angolok", "Franciák", "Hollandok"]
+    },
+    {
+      "questionType": "question",
+      "question": "Merre nem terjeszkedhettek a telepesek?",
+      "answerType": "pickOne",
+      "answers": ["Allegheny-hegységtől nyugatra", "A nagy tavaktól északra", "Appalache hegységen túlra"]
+    },
+    {
+      "questionType": "question",
+      "question": "Mikor adják ki az USA alkotmányát?",
+      "answerType": "typeAnswer",
+      "answers": ["1787"]
+    }]
+  },
+  "3":{
+    "title": "Az Egyesült Államok 3 - Kasza-Kovács Máté & Hajnal Balázs",
+    "data":[{
+      "questionType": "question",
+      "question": "Hány államból állt eredetileg az USA?",
+      "answerType": "pickOne",
+      "answers": ["13", "15", "23"]
+    },
+    {
+      "questionType": "question",
+      "question": "Hol tartották 1774-ben az első kongresszust?",
+      "answerType": "pickOne",
+      "answers": ["Philadelphia", "Boston", "Washington"]
+    },
+    {
+      "questionType": "question",
+      "question": "Melyik amerikai elnök halt meg merénylet által?",
+      "answerType": "typeAnswer",
+      "answers": ["Abraham Lincoln", "Kennedy", "JFK", "Lincoln", "John F. Kennedy", "John F Kennedy", "John Fitzgerald Kennedy", "JF Kennedy", "J. F. Kennedy"]
+    }]
+  },
 }
 /*
-1.Melyik hajón érkeztek Amerikába az első telepesek?
-MAYFLOWER; Santa Maria, Pinta,
-2.Ki volt az Egyesült Államok első elnöke?
-GEORGE WASHINGTON; Thomas Jefferson, Abraham Lincoln,
-3.Mikor adták ki a Függetlenségi Nyilatkozatot?
-1776 JÚLIUS 4; 1773 december 16, 1789 május 5,
-4.Hol volt a híres teadélután 1773-ban?
-BOSTON; Washington, New York,
-5.Ki volt az Amerikai Egyesült Államok harmadik elnöke?
-THOMAS JEFFERSON, George Washington, Theodore Roosevelt,
-6.Hol volt az Amerikai függetlenségi háború döntő csatája?
-YORKTOWN; Gettysburg, New York,
 7.Kik nem támogatták az Egyesült Államok függetlenségét?
 8. ANGOLOK; franciák, holandok,
 9.Merre nem szabadott a telepeseknek terjeszkednie?

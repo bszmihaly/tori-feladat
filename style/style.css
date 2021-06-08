@@ -123,10 +123,10 @@ body{
     width: calc(100%/3);
     height: 100%;
     float:left;/*VSCODE says its useless, but it is useful*/
-    /*SWITCH BETWEEN ANSWER TYPES*/
+    /*SWITCH BETWEEN ANSWER TYPES
     display: none;
     visibility: hidden;
-    /*---------------------------*/
+    ---------------------------*/
 }
 .button{
     border-style: solid;
@@ -159,10 +159,10 @@ body{
     top:calc(50% - 15% - 8px);
     text-align:center;
     position:relative;
-    /*SWITCH BETWEEN ANSWER TYPES*/
+    /*SWITCH BETWEEN ANSWER TYPES
     display: inherit;
     visibility: visible;
-    /*---------------------------*/
+    ---------------------------*/
 }
 #input{
     padding-left:20px;
