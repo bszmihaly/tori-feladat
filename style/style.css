@@ -116,7 +116,7 @@ body{
     width: calc(100%/3);
     height: 100%;
     float:left;/*VSCODE says its useless, but it is useful*/
-    /*CHANGE BETWEEN ANSWER TYPES*/
+    /*SWITCH BETWEEN ANSWER TYPES*/
     display: none;
     visibility: hidden;
     /*---------------------------*/
