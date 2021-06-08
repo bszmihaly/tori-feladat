@@ -1,30 +1,55 @@
-const localdata = data;
-var globalYear;
+var fromHolder = document.getElementById("formHolder");
+var buttonHolder = document.getElementById("buttonVisibility");
+
+var embed = document.getElementById("embed");
+var questionHolder = document.getElementById("questionHolder");
+
+
+var question = document.getElementById("question");
+
+function makeVisible(field){
+    field.style.visibility = "hidden";
+    field.style.display = "none";
+}
+
+function makeHidden(field){
+    field.style.visibility = "visible";
+    field.style.display = "inherit";
+}
+
+makeHidden(fromHolder);
+makeHidden(buttonHolder);
+makeHidden(embed);
+makeHidden(questionHolder);
 
 function CreateGameFieldForYear(year, id){
-    var questionArea = document.getElementById("questionRow");
-    var answerArea = document.getElementById("answerRow");
+    makeHidden(fromHolder);
+    makeHidden(buttonHolder);
+    makeHidden(embed);
+    makeHidden(questionHolder);
+    id = id%3;
     //alert(localdata[year].title);
-    var questionData = localdata[year][id];
+    var questionData = data[year].data[id];
     if(questionData.questionType == "question"){
         //Display question
-        //alert(questionData.question);
+        makeVisible(questionHolder);
     }else if(questionData.questionType == "embed"){
         //Display learningapps etc.
+        makeVisible(embed);
         //alert(questionData.embedSource);
     }
     if(questionData.answerType == "pickOne"){
         //Display 3 answers
+        makeVisible(buttonHolder);
         //alert(questionData.answers);
     }else if(questionData.answerType == "typeAnswer"){
         //textInputfield
+        makeVisible(fromHolder);
         //alert(questionData.correctAnswers);
     }
 }
 
 function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
-
-    //DELETE previous question html objects please, so there wont be overfill issues
 
     var questionData = localdata[year][id];
     if(questionData.answerType == "pickOne"){
@@ -52,9 +77,9 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
 
 
 function DoTheStart(){
-    
-    CreateGameFieldForYear(0, 0);
     StartTheHappenings();
+    CreateGameFieldForYear(0, 1);
+    
 }
 
 DoTheStart();
