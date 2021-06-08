@@ -1,6 +1,4 @@
 function StartTheHappenings(){
-    var r = document.querySelector(':root');
-
     var inputboi = document.getElementById("input");
     var inputbutton = document.getElementById("inputButton");
     var embed = document.getElementById("embed");
