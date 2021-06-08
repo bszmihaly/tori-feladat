@@ -25,19 +25,6 @@ body{
 .gameStyle{
     background-color: #aa6f34;
 }
-#yearField{
-    left:0;
-    top:0;
-    width: calc(100% - 16px);
-    height: calc(10% - 8px);
-    background-color: #aa6f34;
-    border-color:#332e2e;
-    border-top:8px;
-    border-left:8px;
-    border-right:8px;
-    border-style:solid;
-    border-bottom:none;
-}
 .inlineArea{
     display: inline-block;
     height: 90%;
@@ -51,7 +38,15 @@ body{
     width:67%;
     float:right;
 }
-
+#yearFieldFakeBorder{
+    left:0;
+    top:0;
+    height:10%;
+    width:calc(100% - 16px);
+    margin-top:8px;
+    margin-left:8px;
+    margin-right:8px;
+}
 #lettersFieldFakeBorder{
     left:0;
     top:10%;
@@ -73,6 +68,12 @@ body{
     width:calc(100% - 12px);
     height: calc(33% - 12px);
     margin-left: 4px;
+}
+#yearField{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
 }
 #lettersField{
     left:0;
