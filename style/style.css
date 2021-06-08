@@ -28,9 +28,15 @@ body{
 #yearField{
     left:0;
     top:0;
-    width: 100%;
-    height: 10%;
-    background-color: #FFFFFF;
+    width: calc(100% - 16px);
+    height: calc(10% - 8px);
+    background-color: #aa6f34;
+    border-color:#332e2e;
+    border-top:8px;
+    border-left:8px;
+    border-right:8px;
+    border-style:solid;
+    border-bottom:none;
 }
 .inlineArea{
     display: inline-block;
