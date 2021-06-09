@@ -1,23 +1,8 @@
 #questionTitle{
     margin:0;
 }
-#yearField{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    text-align:center;
-    color:white;
-    font-family:Impact,fantasy;
-    letter-spacing:1px;
-    font-size:35px;
-}
-#lettersField{
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-}
+
+
 .labelHolder{
     line-height:75px;
     width:100%;
@@ -32,12 +17,7 @@
     font-family:Impact, fantasy;
     letter-spacing:1px;
 }
-#questionField{
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
+
 #questionHolder{
     text-align:center;
     background-color:#00FF00;
@@ -54,13 +34,6 @@
     width:100%;
     top: 75px;
     border-style: none;
-}
-#answerField{
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    background-color: var(--bgcol);
 }
 /*3 option question*/
 #buttonVisibility{
