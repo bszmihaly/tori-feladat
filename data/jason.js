@@ -110,13 +110,13 @@ var data = {
       "questionType": "question",
       "question": "Honnan indult a szabadkőműves mozgalom?",
       "answerType": "pickOne",
-      "answers": ["Franciaország", "Brit-szigetek", "Németalföld"]
+      "answers": ["Brit-szigetek", "Franciaország", "Németalföld"]
     },
     {
       "questionType": "question",
       "question": "Hogy nevezik a jogot egy körzet képviseléséhez?",
       "answerType": "pickOne",
-      "answers": ["Cenzus", "Kamara", "Mandátum"]
+      "answers": ["Mandátum", "Kamara", "Cenzus"]
     },
     {
       "questionType": "question",
@@ -143,7 +143,7 @@ var data = {
       "questionType": "question",
       "question": "Ki nevezte ki Turgot-t pénzügyellenőrnek?",
       "answerType": "pickOne",
-      "answers": ["Mária Terézia", "Nagy Katalin", "XIV. Lajos"]
+      "answers": ["XIV. Lajos", "Nagy Katalin", "Mária Terézia"]
     }]
   },
   "6":{
@@ -152,13 +152,13 @@ var data = {
       "questionType": "question",
       "question": "Melyik ország NEM vett részt Lengyelország felosztásában 1795-ben?",
       "answerType": "pickOne",
-      "answers": ["Porosz Királyság", "Orosz Birodalom", "Franciaország"]
+      "answers": ["Franciaország", "Orosz Birodalom", "Porosz Királyság"]
     },
     {
       "questionType": "question",
       "question": "Melyik területet szerezték meg a poroszok a 18. században az alábbiak közül?",
       "answerType": "pickOne",
-      "answers": ["Németalföld", "Szilézia", "Krím-félsziget"]
+      "answers": ["Szilézia", "Németalföld", "Krím-félsziget"]
     },
     {
       "questionType": "question",
