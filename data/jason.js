@@ -74,7 +74,7 @@ var data = {
       "questionType": "question",
       "question": "Merre NEM terjeszkedhettek a telepesek?",
       "answerType": "pickOne",
-      "answers": ["Az Allegheny-hegységtől nyugatra", "A Nagy Tavaktól északra", "Az Appalache hegységen túlra"]
+      "answers": ["Az Appalache-hegységtől nyugatra", "A Nagy Tavaktól északra", "A Sziklás-hegységtől nyugatra"]
     },
     {
       "questionType": "question",
