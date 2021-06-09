@@ -5,7 +5,7 @@ var btns = [document.getElementById("btn1"), document.getElementById("btn2"), do
 var sbmtbtn = document.getElementById("inputButton");
 var input = document.getElementById("input");
 var ytitle = document.getElementById("questionTitle");
-
+var table = document.getElementById("table");
 var embed = document.getElementById("embed");
 var questionHolder = document.getElementById("questionHolder");
 
@@ -28,6 +28,16 @@ makeHidden(fromHolder);
 makeHidden(buttonHolder);
 makeHidden(embed);
 makeHidden(questionHolder);
+
+function FillInCorrectnessToTable(year, id, correct){
+    col = "";
+    if(correct){
+        col = "green";
+    }else{
+        col = "red";
+    }
+    table.rows[year+1].cells[id+1].style.backgroundColor = col;
+}
 
 function CreateGameFieldForYear(year, id){
     makeHidden(fromHolder);
@@ -95,10 +105,12 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
     if(questionData.answerType == "pickOne"){
         //Check answer correctness
         if(questionData.answers[0] == text){
+            FillInCorrectnessToTable(year, id, true)
             //SUCCESS GO TO NEXT YEAR
             console.log(`success at ${year}, ${id}, ${questionData.question}, ${questionData.embedSource}, ${text}`)
             CreateGameFieldForYear(year+1, 0)
         }else{
+            FillInCorrectnessToTable(year, id, false)
             //EPIC FAIL DO THE CIRCLE
             //btns[(offset*2)%3].style.backgroundColor = "green";
             //setTimeout(function(){btns[offset%3].style.backgroundColor = "peru";btnpressed = false; CreateGameFieldForYear(year, (id+1)%3)}, 3000);
@@ -113,9 +125,11 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
         text = text.toLowerCase();
         //Check answer correctness
         if(questionData.answers.map(word => word.toLowerCase()).includes(text)){
+            FillInCorrectnessToTable(year, id, true);
             //SUCCESS GO TO NEXT YEAR
             CreateGameFieldForYear(year+1, 0);
         }else{
+            FillInCorrectnessToTable(year, id, false);
             //EPIC FAIL DO THE CIRCLE
             if(id == 2){
                 CreateGameFieldForYear(year+1, 0);
