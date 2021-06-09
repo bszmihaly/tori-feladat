@@ -42,7 +42,7 @@ var data = {
     }]
   },
   "1":{
-    "title": "Az amerikai függetlenségi háború Függetlenségi háború",
+    "title": "Az amerikai függetlenségi háború",
     "data":[{
       "questionType": "question",
       "question": "Hol volt az amerikai függetlenségi háború döntő csatája?",
