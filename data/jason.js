@@ -188,4 +188,13 @@ var data = {
       "answers": ["közös területszerzésre", "erős hatalom visszaszorítására", "vallási problémák rendezésére"]
     }]
   },
+  "8":{
+    "title": "VÉGE",
+    "data": [{
+      "questionType": "question",
+      "question:": "Gratulálok, teljesítetted a kihívást, és megmutattad, ismered a felvilágosodás korát. Mennyire tetszett a feladatsor?",
+      "answerType": "endSurvey",
+      "answers": ["Nagyon tetszett", "Átlagos volt", "Nem tetszett"]
+    }]
+  }
 }
