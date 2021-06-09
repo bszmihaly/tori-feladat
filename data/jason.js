@@ -21,7 +21,7 @@ var data = {
     }]
   },*/
   "0":{
-    "title": "Az Egyesült Államok 1 - Kasza-Kovács Máté",
+    "title": "Az Egyesült Államok 1.",
     "data":[{
       "questionType": "question",
       "question": "Melyik hajón érkeztek Amerikába az első telepesek?",
@@ -42,10 +42,10 @@ var data = {
     }]
   },
   "1":{
-    "title": "A Függetlenségi háború - Kasza-Kovács Máté",
+    "title": "Az amerikai függetlenségi háború Függetlenségi háború",
     "data":[{
       "questionType": "question",
-      "question": "Hol volt az Amerikai függetlenségi háború döntő csatája?",
+      "question": "Hol volt az amerikai függetlenségi háború döntő csatája?",
       "answerType": "pickOne",
       "answers": ["Yorktown", "Gettysburg", "New York"]
     },
@@ -63,7 +63,7 @@ var data = {
     }]
   },
   "2":{
-    "title": "Az Egyesült Államok 2 - Kasza-Kovács Máté",
+    "title": "Az Egyesült Államok 2.",
     "data":[{
       "questionType": "question",
       "question": "Kik NEM támogatták az Egyesült Államok függetlenségét?",
@@ -84,7 +84,7 @@ var data = {
     }]
   },
   "3":{
-    "title": "Az Egyesült Államok 3 - Kasza-Kovács Máté",
+    "title": "Az Egyesült Államok 3.",
     "data":[{
       "questionType": "question",
       "question": "Hány államból állt kezdetben az USA?",
@@ -105,7 +105,7 @@ var data = {
     }]
   },
   "4":{
-    "title": "Szabadkőművesek, képviselet, mezőgazdasági újítások - Pap Marcell",
+    "title": "Szabadkőművesek, képviselet, mezőgazdasági újítások",
     "data":[{
       "questionType": "question",
       "question": "Honnan indult a szabadkőműves mozgalom?",
@@ -126,7 +126,7 @@ var data = {
     }]
   },
   "5":{
-    "title": "Abszolutizmusok 1 - Pap Marcell",
+    "title": "Abszolutizmusok 1.",
     "data":[{
       "questionType": "embed",
       "embedSource": "https://learningapps.org/watch?v=penf57itk21",
@@ -147,7 +147,7 @@ var data = {
     }]
   },
   "6":{
-    "title": "Abszolutizmusok 2 - Pap Marcell, Hajnal Balázs",
+    "title": "Abszolutizmusok 2.",
     "data":[{
       "questionType": "question",
       "question": "Melyik ország NEM vett részt Lengyelország felosztásában 1795-ben?",
@@ -168,7 +168,7 @@ var data = {
     }]
   },
   "7":{
-    "title": "Hatalmi politika a XVIII. században - Hajnal Balázs",
+    "title": "Hatalmi politika a XVIII. században",
     "data":[{
       "questionType": "question",
       "question": "Melyik elv alapján működött az angol hatalmi politika a XVIII. században?",
