@@ -53,6 +53,12 @@ function CreateGameFieldForYear(year, id){
     }
     if(questionData.answerType == "pickOne"){
         //Display 3 answers
+        /*
+        btnClones = [btns[0].cloneNode(true), btns[1].cloneNode(true), btns[2].cloneNode(true)];
+        btns[0].parentNode.replaceChild(btnClones[0], btns[0]);
+        btns[1].parentNode.replaceChild(btnClones[1], btns[1]);
+        btns[2].parentNode.replaceChild(btnClones[2], btns[2]);*/
+
         offset = Math.floor(Math.random()*3);
         btns[0].innerText = questionData.answers[offset%3];
         btns[1].innerText = questionData.answers[(offset+1)%3];
@@ -79,12 +85,14 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
         //Check answer correctness
         if(questionData.answers[0] == text){
             //SUCCESS GO TO NEXT YEAR
+            console.log(`success at ${year}, ${id}, ${questionData.question}, ${questionData.embedSource}, ${text}`)
             CreateGameFieldForYear(year+1, 0)
         }else{
             //EPIC FAIL DO THE CIRCLE
             //btns[(offset*2)%3].style.backgroundColor = "green";
             //setTimeout(function(){btns[offset%3].style.backgroundColor = "peru";btnpressed = false; CreateGameFieldForYear(year, (id+1)%3)}, 3000);
             CreateGameFieldForYear(year, (id+1)%3)
+            console.log(`failure at ${year}, ${id}, ${questionData.question}, ${questionData.embedSource}, ${text}`)
         }
     }else if(questionData.answerType == "typeAnswer"){
         text = text.toLowerCase();

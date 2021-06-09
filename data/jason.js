@@ -128,8 +128,8 @@ var data = {
   "5":{
     "title": "Abszolutizmusok 1 - Pap Marcell",
     "data":[{
-      "questionType": "question",
-      "question": "Kinek a mintáját próbálták követni a felvilágosult abszolutizmust vezető uralkodók?",
+      "questionType": "embed",
+      "embedSource": "https://learningapps.org/watch?v=penf57itk21",
       "answerType": "pickOne",
       "answers": ["XIV. Lajos", "George Washington", "I. Frigyes"]
     },
@@ -168,15 +168,3 @@ var data = {
     }]
   },
 }
-/*
-7.Kik nem támogatták az Egyesült Államok függetlenségét?
-8. ANGOLOK; franciák, holandok,
-9.Merre nem szabadott a telepeseknek terjeszkednie?
-ALLEGHENY-HEGYSÉGTŐL NYUGATRA; nagy tavaktól északra, Appalache hegységen túlra,
-10.Mikor adják ki az USA alkotmányát?
-1787(EZ); 1798, 1834, 
-11.Hány államból állt eredetileg az USA,
-13(EZ); 15, 23,
-12.Hol tartották 1774-ben az első kongresszust?
-PHILADELPHIA; Boston, Washington,
-*/
