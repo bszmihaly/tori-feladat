@@ -150,7 +150,7 @@ var data = {
     "title": "Abszolutizmusok 2.",
     "data":[{
       "questionType": "question",
-      "question": "Melyik ország NEM vett részt Lengyelország felosztásában 1795-ben?",
+      "question": "Melyik ország NEM vett részt Lengyelország felosztásában?",
       "answerType": "pickOne",
       "answers": ["Franciaország", "Orosz Birodalom", "Porosz Királyság"]
     },
