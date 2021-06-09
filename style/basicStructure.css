@@ -57,6 +57,11 @@ body{
     height: calc(90% - 16px);
     margin-right: 4px;
 }
+#pointCount{
+    height:calc(100% - 75px);
+    width:100%;
+    background-color:#00FF00;
+}
 #questionFieldFakeBorder{
     top:0;
     left:0;

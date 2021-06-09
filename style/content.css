@@ -10,6 +10,23 @@
     font-family:Impact, fantasy;
     letter-spacing:1px;
 }
+#table{
+    height:100%;
+    width:100%;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    border-top:8px solid #332e2e;
+}
+#tableHeader{
+    border-width:8px;
+    border-color:blue;
+    font-size:10px;
+}
+.tableRow{
+    border:8px solid #332e2e;
+    height:calc(100% / 8);
+}
 #question{
     margin:0;
     font-size:30px;
