@@ -1,14 +1,6 @@
 #questionTitle{
     margin:0;
 }
-
-
-.labelHolder{
-    line-height:75px;
-    width:100%;
-    height:75px;
-    background-color:peru;
-}
 .labels{
     text-align:center;
     margin:0px;
@@ -16,11 +8,6 @@
     font-size:40px;
     font-family:Impact, fantasy;
     letter-spacing:1px;
-}
-
-#questionHolder{
-    text-align:center;
-    background-color:#00FF00;
 }
 #question{
     margin:0;
@@ -39,16 +26,6 @@
 #buttonVisibility{
     height: 100%;
     width: 100%;
-}
-.buttonHolder{
-    display:inline-block;
-    width: calc(100%/3);
-    height: 100%;
-    float:left;/*VSCODE says its useless, but it is useful*/
-    /*SWITCH BETWEEN ANSWER TYPES
-    display: none;
-    visibility: hidden;
-    ---------------------------*/
 }
 .button{
     border-style: solid;
