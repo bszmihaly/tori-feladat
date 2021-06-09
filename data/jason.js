@@ -30,7 +30,7 @@ var data = {
     },
     {
       "questionType": "question",
-      "question": "Ki volt az Egyesült Államok első elnöke?",
+      "question": "Ki volt az Amerikai Egyesült Államok első elnöke?",
       "answerType": "pickOne",
       "answers": ["George Washington", "Thomas Jefferson", "Abraham Lincoln"]
     },
@@ -66,19 +66,19 @@ var data = {
     "title": "Az Egyesült Államok 2 - Kasza-Kovács Máté",
     "data":[{
       "questionType": "question",
-      "question": "Kik nem támogatták az Egyesült Államok függetlenségét?",
+      "question": "Kik NEM támogatták az Egyesült Államok függetlenségét?",
       "answerType": "pickOne",
       "answers": ["Angolok", "Franciák", "Hollandok"]
     },
     {
       "questionType": "question",
-      "question": "Merre nem terjeszkedhettek a telepesek?",
+      "question": "Merre NEM terjeszkedhettek a telepesek?",
       "answerType": "pickOne",
       "answers": ["Allegheny-hegységtől nyugatra", "A nagy tavaktól északra", "Appalache hegységen túlra"]
     },
     {
       "questionType": "question",
-      "question": "Mikor adják ki az USA alkotmányát?",
+      "question": "Mikor adták ki az USA alkotmányát?",
       "answerType": "typeAnswer",
       "answers": ["1787"]
     }]
@@ -87,7 +87,7 @@ var data = {
     "title": "Az Egyesült Államok 3 - Kasza-Kovács Máté",
     "data":[{
       "questionType": "question",
-      "question": "Hány államból állt eredetileg az USA?",
+      "question": "Hány államból állt kezdetben az USA?",
       "answerType": "pickOne",
       "answers": ["13", "15", "23"]
     },
@@ -99,13 +99,13 @@ var data = {
     },
     {
       "questionType": "question",
-      "question": "Melyik amerikai elnök halt meg merénylet által?",
+      "question": "Melyik amerikai elnök halt meg merényletben?",
       "answerType": "typeAnswer",
       "answers": ["Abraham Lincoln", "Kennedy", "JFK", "Lincoln", "John F. Kennedy", "John F Kennedy", "John Fitzgerald Kennedy", "JF Kennedy", "J. F. Kennedy"]
     }]
   },
   "4":{
-    "title": "Szabadkőművesek, brit alkotmány, mezőgazdasági újítások - Pap Marcell",
+    "title": "Szabadkőművesek, képviselet, mezőgazdasági újítások - Pap Marcell",
     "data":[{
       "questionType": "question",
       "question": "Honnan indult a szabadkőműves mozgalom?",
@@ -129,13 +129,13 @@ var data = {
     "title": "Abszolutizmusok 1 - Pap Marcell",
     "data":[{
       "questionType": "question",
-      "question": "Kinek a mintáját próbálta követni minden felvilágosult abszolutizmust vezető uralkodó?",
+      "question": "Kinek a mintáját próbálták követni a felvilágosult abszolutizmust vezető uralkodók?",
       "answerType": "pickOne",
       "answers": ["XIV. Lajos", "George Washington", "I. Frigyes"]
     },
     {
       "questionType": "question",
-      "question": "Az alábbiak közül melyik államra nem a felvilágosult abszolutizmus volt jellemző a 18. században?",
+      "question": "Az alábbiak közül melyik államra NEM a felvilágosult abszolutizmus volt jellemző a 18. században?",
       "answerType": "pickOne",
       "answers": ["Franciaország", "Porosz Királyság", "Orosz Birodalom"]
     },
@@ -150,7 +150,7 @@ var data = {
     "title": "Abszolutizmusok 2 - Pap Marcell, Hajnal Balázs",
     "data":[{
       "questionType": "question",
-      "question": "Melyik ország nem vett részt Lengyelország felosztásában 1795-ben?",
+      "question": "Melyik ország NEM vett részt Lengyelország felosztásában 1795-ben?",
       "answerType": "pickOne",
       "answers": ["Porosz Királyság", "Orosz Birodalom", "Franciaország"]
     },

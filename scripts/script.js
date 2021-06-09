@@ -4,7 +4,7 @@ var buttonHolder = document.getElementById("buttonVisibility");
 var btns = [document.getElementById("btn1"), document.getElementById("btn2"), document.getElementById("btn3")];
 var sbmtbtn = document.getElementById("inputButton");
 var input = document.getElementById("input");
-var ytitle = document.getElementById("yearField");
+var ytitle = document.getElementById("questionTitle");
 
 var embed = document.getElementById("embed");
 var questionHolder = document.getElementById("questionHolder");
