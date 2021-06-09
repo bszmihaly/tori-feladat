@@ -167,4 +167,25 @@ var data = {
       "answers": ["II. Nagy Frigyes", "I. Frigyes", "Frigyes Vilmos"]
     }]
   },
+  "7":{
+    "title": "Hatalmi politika a XVIII. században - Hajnal Balázs",
+    "data":[{
+      "questionType": "question",
+      "question": "Melyik elv alapján működött az angol hatalmi politika a XVIII. században?",
+      "answerType": "pickOne",
+      "answers": ["status quo", "proscriptio", "predesztináció"]
+    },
+    {
+      "questionType": "question",
+      "question": "A hatalmi túlsúlyt másképp ... nevezzük.",
+      "answerType": "pickOne",
+      "answers": ["hegemóniának", "szimóniának", "allegóriának"]
+    },
+    {
+      "questionType": "question",
+      "question": "Milyen tevékenységre NEM szerveződtek szövetségek a XVIII. században?",
+      "answerType": "pickOne",
+      "answers": ["közös területszerzésre", "erős hatalom visszaszorítására", "vallási problémák rendezésére"]
+    }]
+  },
 }
