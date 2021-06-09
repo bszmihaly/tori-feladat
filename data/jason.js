@@ -84,7 +84,7 @@ var data = {
     }]
   },
   "3":{
-    "title": "Az Egyesült Államok 3 - Kasza-Kovács Máté & Hajnal Balázs",
+    "title": "Az Egyesült Államok 3 - Kasza-Kovács Máté",
     "data":[{
       "questionType": "question",
       "question": "Hány államból állt eredetileg az USA?",
@@ -102,6 +102,69 @@ var data = {
       "question": "Melyik amerikai elnök halt meg merénylet által?",
       "answerType": "typeAnswer",
       "answers": ["Abraham Lincoln", "Kennedy", "JFK", "Lincoln", "John F. Kennedy", "John F Kennedy", "John Fitzgerald Kennedy", "JF Kennedy", "J. F. Kennedy"]
+    }]
+  },
+  "4":{
+    "title": "Szabadkőművesek, brit alkotmány, mezőgazdasági újítások - Pap Marcell",
+    "data":[{
+      "questionType": "question",
+      "question": "Honnan indult a szabadkőműves mozgalom?",
+      "answerType": "pickOne",
+      "answers": ["Franciaország", "Brit-szigetek", "Németalföld"]
+    },
+    {
+      "questionType": "question",
+      "question": "Hogy nevezik a jogot egy körzet képviseléséhez?",
+      "answerType": "pickOne",
+      "answers": ["Cenzus", "Kamara", "Mandátum"]
+    },
+    {
+      "questionType": "question",
+      "question": "Mit tett lehetővé a vetésforgó?",
+      "answerType": "pickOne",
+      "answers": ["Az ugar művelés alá vonása", "A növények egyszerűbb öntözése", "A termények gyorsabb eladása"]
+    }]
+  },
+  "5":{
+    "title": "Abszolutizmusok 1 - Pap Marcell",
+    "data":[{
+      "questionType": "question",
+      "question": "Kinek a mintáját próbálta követni minden felvilágosult abszolutizmust vezető uralkodó?",
+      "answerType": "pickOne",
+      "answers": ["XIV. Lajos", "George Washington", "I. Frigyes"]
+    },
+    {
+      "questionType": "question",
+      "question": "Az alábbiak közül melyik államra nem a felvilágosult abszolutizmus volt jellemző a 18. században?",
+      "answerType": "pickOne",
+      "answers": ["Franciaország", "Porosz Királyság", "Orosz Birodalom"]
+    },
+    {
+      "questionType": "question",
+      "question": "Ki nevezte ki Turgot-t pénzügyellenőrnek?",
+      "answerType": "pickOne",
+      "answers": ["Mária Terézia", "Nagy Katalin", "XIV. Lajos"]
+    }]
+  },
+  "6":{
+    "title": "Abszolutizmusok 2 - Pap Marcell, Hajnal Balázs",
+    "data":[{
+      "questionType": "question",
+      "question": "Melyik ország nem vett részt Lengyelország felosztásában 1795-ben?",
+      "answerType": "pickOne",
+      "answers": ["Porosz Királyság", "Orosz Birodalom", "Franciaország"]
+    },
+    {
+      "questionType": "question",
+      "question": "Melyik területet szerezték meg a poroszok a 18. században az alábbiak közül?",
+      "answerType": "pickOne",
+      "answers": ["Németalföld", "Szilézia", "Krím-félsziget"]
+    },
+    {
+      "questionType": "question",
+      "question": "Ki tette katonai nagyhatalommá a Porosz Királyságot?",
+      "answerType": "pickOne",
+      "answers": ["II. Nagy Frigyes", "I. Frigyes", "Frigyes Vilmos"]
     }]
   },
 }

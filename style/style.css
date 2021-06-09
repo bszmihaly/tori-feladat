@@ -30,12 +30,11 @@ body{
     height: 90%;
     width: 100%;
 }
-
 #gameArea{
     top:10%;
     left:33%;
     height:90%;
-    width:67%;
+    width:80%;
     float:right;
 }
 #yearFieldFakeBorder{
@@ -49,7 +48,7 @@ body{
 #lettersFieldFakeBorder{
     left:0;
     top:10%;
-    width: calc(33% - 12px);
+    width: calc(20% - 12px);
     height: calc(90% - 16px);
     margin-right: 4px;
 }
@@ -85,12 +84,8 @@ body{
     width: 100%;
     height: 100%;
 }
-#lettersLabel{
-    width:100%;
-    height:75px;
-    background-color:peru;
-}
-#questionLabel{
+.labelHolder{
+    line-height:75px;
     width:100%;
     height:75px;
     background-color:peru;
@@ -111,8 +106,8 @@ body{
     height:100%;
 }
 #questionHolder{
-    height:calc(100% - 75px);
     text-align:center;
+    background-color:#00FF00;
 }
 #question{
     margin:0;
