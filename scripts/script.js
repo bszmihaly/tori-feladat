@@ -48,6 +48,9 @@ function CreateGameFieldForYear(year, id){
     //alert(localdata[year].title);
     var questionData = data[year].data[id];
     ytitle.innerText = data[year].title;
+
+    input.onkeyup = null;
+
     if(questionData.questionType == "question"){
         //Display question
         //alert(questionData.question);
@@ -60,9 +63,6 @@ function CreateGameFieldForYear(year, id){
         
         //alert(questionData.embedSource);
         //alert(questionData.embedSource);
-    }else if(questionData.questionType == "FIN"){
-        question.innerText = questionData.question;
-        makeVisible(questionHolder);
     }
     if(questionData.answerType == "pickOne"){
         //Display 3 answers
@@ -92,10 +92,17 @@ function CreateGameFieldForYear(year, id){
         //textInputfield
         input.value = "";
         makeVisible(fromHolder);
+
+        input.onkeydown = (event)=>{
+            if(event.key == "Enter")
+            {
+                event.preventDefault(); 
+                CheckAnswerCorrectnessAndRedirectToNext(year, id, input.value); 
+                input.value = "";
+            }
+        };
         sbmtbtn.addEventListener("click", () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, input.value); input.value = "";});
         //alert(questionData.correctAnswers);
-    }else if(questionData.answerType == "none"){
-
     }
 }
 
