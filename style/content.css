@@ -9,7 +9,6 @@
     font-size:40px;
     font-family:Impact, fantasy;
     letter-spacing:1px;
-    border-bottom:8px;
 }
 #table{
     height:100%;
@@ -17,7 +16,6 @@
     background-color:#332e2e;
     color:white;
     font-size:15px;
-    border-top:8px;
 }
 #tableHeader{
     width:calc(100% / 4);
@@ -31,12 +29,6 @@
     margin:0;
     background-color:#aa6f34;
     text-align:center;
-}
-.question3{
-    height:calc(100% / 9);
-    width:calc(100% / 4);
-    margin:0;
-    background-color:#aa6f34;
 }
 #question{
     margin:0;

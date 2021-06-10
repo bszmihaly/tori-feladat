@@ -33,7 +33,7 @@ body{
     top:10%;
     left:33%;
     height:90%;
-    width:80%;
+    width:70%;
     float:right;
 }
 .labelHolder{
@@ -53,7 +53,7 @@ body{
 #lettersFieldFakeBorder{
     left:0;
     top:10%;
-    width: calc(20% - 12px);
+    width: calc(30% - 12px);
     height: calc(90% - 16px);
     margin-right: 4px;
 }
