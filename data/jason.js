@@ -50,8 +50,8 @@ var data = {
       "answers": ["Yorktown", "Gettysburg", "New York"]
     },
     {
-      "questionType": "question",
-      "question": "Hol volt a híres teadélután 1773-ban?",
+      "questionType": "embed",
+      "embedSource": "https://learningapps.org/watch?v=pmb4357vk21",
       "answerType": "typeAnswer",
       "answers": ["Boston"]
     },
@@ -113,8 +113,8 @@ var data = {
       "answers": ["Brit-szigetek", "Franciaország", "Németalföld"]
     },
     {
-      "questionType": "question",
-      "question": "Hogy nevezik a jogot egy körzet képviseléséhez?",
+      "questionType": "embed",
+      "embedSource": "https://learningapps.org/watch?v=p8vintep321",
       "answerType": "pickOne",
       "answers": ["Mandátum", "Kamara", "Cenzus"]
     },
@@ -170,8 +170,8 @@ var data = {
   "7":{
     "title": "Hatalmi politika a XVIII. században",
     "data":[{
-      "questionType": "question",
-      "question": "Melyik elv alapján működött az angol hatalmi politika a XVIII. században?",
+      "questionType": "embed",
+      "embedSource": "https://learningapps.org/watch?v=ppb0rkson21",
       "answerType": "pickOne",
       "answers": ["status quo", "proscriptio", "predesztináció"]
     },
@@ -192,8 +192,8 @@ var data = {
     "title": "VÉGE",
     "data": [{
       "questionType": "question",
-      "question:": "Gratulálok, teljesítetted a kihívást, és megmutattad, ismered a felvilágosodás korát. Mennyire tetszett a feladatsor?",
-      "answerType": "endSurvey",
+      "question:": "Gratulálok, teljesítetted a kihívást, és megmutattad, ismered a felvilágosodás korát. Tetszett a feladatsor?",
+      "answerType": "pickOne",
       "answers": ["Nagyon tetszett", "Átlagos volt", "Nem tetszett"]
     }]
   }
