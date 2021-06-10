@@ -99,6 +99,9 @@ body{
     width:100%;
     height:100%;
 }
+#questionHolder2{
+    border-top:8px solid #332e2e;
+}
 #questionHolder{
     text-align:center;
 }

@@ -13,22 +13,45 @@
 #table{
     height:100%;
     width:100%;
-    background-color:#332e2e;
+    background-color:#aa6f34;
     color:white;
     font-size:12px;
+    border-spacing:0;
+    text-align:center;
 }
-#tableHeader{
-    width:calc(100% / 4);
+#Top{
+    border-left:none;
+    border-right:none;
+}
+.tableTop{
+    border-top:8px solid #332e2e;
     height:calc(100% / 9);
-    font-size:15px;
-    background-color:#aa6f34;
+    width:calc(100% / 4);
+    margin:0;
+    border-top:8px solid #332e2e;
+    border-bottom:1px solid #332e2e;
 }
 .tableCell{
     height:calc(100% / 9);
     width:calc(100% / 4);
-    margin:0;
-    background-color:#aa6f34;
-    text-align:center;
+    border:1px solid #332e2e;
+}
+.Left{
+    height:calc(100% / 9);
+    width:calc(100% / 4);
+    border-top:1px solid #332e2e;
+    border-right:1px solid #332e2e;
+    border-bottom:1px solid #332e2e;
+    border-left:none;
+
+}
+.Right{
+    height:calc(100% / 9);
+    width:calc(100% / 4);
+    border-top:1px solid #332e2e;
+    border-left:1px solid #332e2e;
+    border-bottom:1px solid #332e2e;
+    border-right:none;
 }
 #question{
     margin:0;
