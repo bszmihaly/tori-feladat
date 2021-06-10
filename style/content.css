@@ -19,39 +19,22 @@
     border-spacing:0;
     text-align:center;
 }
-#Top{
-    border-left:none;
-    border-right:none;
-}
-.tableTop{
-    border-top:8px solid #332e2e;
-    height:calc(100% / 9);
-    width:calc(100% / 4);
-    margin:0;
-    border-top:8px solid #332e2e;
-    border-bottom:1px solid #332e2e;
-}
 .tableCell{
     height:calc(100% / 9);
     width:calc(100% / 4);
     border:1px solid #332e2e;
 }
 .Left{
-    height:calc(100% / 9);
-    width:calc(100% / 4);
-    border-top:1px solid #332e2e;
-    border-right:1px solid #332e2e;
-    border-bottom:1px solid #332e2e;
     border-left:none;
-
 }
 .Right{
-    height:calc(100% / 9);
-    width:calc(100% / 4);
-    border-top:1px solid #332e2e;
-    border-left:1px solid #332e2e;
-    border-bottom:1px solid #332e2e;
     border-right:none;
+}
+.Bottom{
+    border-bottom: none;
+}
+.Top{
+    border-top-width: 8px;
 }
 #question{
     margin:0;
