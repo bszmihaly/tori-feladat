@@ -192,7 +192,7 @@ var data = {
     "title": "VÉGE",
     "data": [{
       "questionType": "question",
-      "question:": "Gratulálok, teljesítetted a kihívást, és megmutattad, ismered a felvilágosodás korát. Tetszett a feladatsor?",
+      "question": "Gratulálok, teljesítetted a kihívást, és megmutattad, ismered a felvilágosodás korát. Tetszett a feladatsor?",
       "answerType": "pickOne",
       "answers": ["Nagyon tetszett", "Átlagos volt", "Nem tetszett"]
     }]

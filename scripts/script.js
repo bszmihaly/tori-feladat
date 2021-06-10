@@ -48,6 +48,9 @@ function CreateGameFieldForYear(year, id){
     //alert(localdata[year].title);
     var questionData = data[year].data[id];
     ytitle.innerText = data[year].title;
+
+    input.onkeyup = null;
+
     if(questionData.questionType == "question"){
         //Display question
         //alert(questionData.question);
@@ -60,9 +63,6 @@ function CreateGameFieldForYear(year, id){
         
         //alert(questionData.embedSource);
         //alert(questionData.embedSource);
-    }else if(questionData.questionType == "FIN"){
-        question.innerText = questionData.question;
-        makeVisible(questionHolder);
     }
     if(questionData.answerType == "pickOne"){
         //Display 3 answers
@@ -92,10 +92,17 @@ function CreateGameFieldForYear(year, id){
         //textInputfield
         input.value = "";
         makeVisible(fromHolder);
+
+        input.onkeydown = (event)=>{
+            if(event.key == "Enter")
+            {
+                event.preventDefault(); 
+                CheckAnswerCorrectnessAndRedirectToNext(year, id, input.value); 
+                input.value = "";
+            }
+        };
         sbmtbtn.addEventListener("click", () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, input.value); input.value = "";});
         //alert(questionData.correctAnswers);
-    }else if(questionData.answerType == "none"){
-
     }
 }
 
@@ -108,18 +115,12 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
             FillInCorrectnessToTable(year, id, true)
             //SUCCESS GO TO NEXT YEAR
             console.log(`success at ${year}, ${id}, ${questionData.question}, ${questionData.embedSource}, ${text}`)
-            CreateGameFieldForYear(year+1, 0)
         }else{
             FillInCorrectnessToTable(year, id, false)
             //EPIC FAIL DO THE CIRCLE
             //btns[(offset*2)%3].style.backgroundColor = "green";
             //setTimeout(function(){btns[offset%3].style.backgroundColor = "peru";btnpressed = false; CreateGameFieldForYear(year, (id+1)%3)}, 3000);
             console.log(`failure at ${year}, ${id}, ${questionData.question}, ${questionData.embedSource}, ${text}`);
-            if(id == 2){
-                CreateGameFieldForYear(year+1, 0);
-            }else{
-                CreateGameFieldForYear(year, (id+1)%3);
-            }
         }
     }else if(questionData.answerType == "typeAnswer"){
         text = text.toLowerCase();
@@ -127,16 +128,15 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
         if(questionData.answers.map(word => word.toLowerCase()).includes(text)){
             FillInCorrectnessToTable(year, id, true);
             //SUCCESS GO TO NEXT YEAR
-            CreateGameFieldForYear(year+1, 0);
         }else{
             FillInCorrectnessToTable(year, id, false);
             //EPIC FAIL DO THE CIRCLE
-            if(id == 2){
-                CreateGameFieldForYear(year+1, 0);
-            }else{
-                CreateGameFieldForYear(year, (id+1)%3);
-            }
         }
+    }
+    if(id == 2){
+        CreateGameFieldForYear(year+1, 0);
+    }else{
+        CreateGameFieldForYear(year, (id+1)%3);
     }
 }
 
