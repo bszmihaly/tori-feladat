@@ -44,7 +44,7 @@
     letter-spacing:1px;
 }
 #embed{
-    height:calc(1 * (100% - 75px));
+    min-height:calc(100% - 75px);
     width:100%;
     top: 75px;
     border-style: none;

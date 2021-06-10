@@ -101,6 +101,7 @@ body{
 }
 #questionHolder2{
     border-top:8px solid #332e2e;
+    height: calc(100% - 8px);
 }
 #questionHolder{
     text-align:center;
