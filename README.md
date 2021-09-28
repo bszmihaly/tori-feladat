@@ -1,4 +1,3 @@
 # tori-feladat
 
-Start date:20210512
-Actual start date:20210603
+Kvíz-weboldal történelemórára, növelhető feladatmennyiséggel, dinamikus kérdés- és válaszmegjelenítéssel, a feladattól függően.
