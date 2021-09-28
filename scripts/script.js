@@ -103,6 +103,31 @@ function CreateGameFieldForYear(year, id){
         };
         sbmtbtn.addEventListener("click", () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, input.value); input.value = "";});
         //alert(questionData.correctAnswers);
+    }else if(questionData.answerType == "none"){
+        
+    }else if(questionData.answerType == "pickOneEnd"){
+        //Display 3 answers
+        btnClones = [btns[0].cloneNode(true), btns[1].cloneNode(true), btns[2].cloneNode(true)];
+
+        btns[0].innerText = questionData.answers[0];
+        btns[1].innerText = questionData.answers[1];
+        btns[2].innerText = questionData.answers[2];
+
+        try {
+            btns[0].onclick = null;
+            btns[1].onclick = null;
+            btns[2].onclick = null;
+        } catch (error) {
+            console.log(error);
+        }
+        
+
+        btns[0].onclick = () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, questionData.answers[0])};
+        btns[1].onclick = () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, questionData.answers[0])};
+        btns[2].onclick = () => {CheckAnswerCorrectnessAndRedirectToNext(year, id, questionData.answers[0])};
+        
+        makeVisible(buttonHolder);
+        //alert(questionData.answers);
     }
 }
 
@@ -132,6 +157,10 @@ function CheckAnswerCorrectnessAndRedirectToNext(year, id, text){
             FillInCorrectnessToTable(year, id, false);
             //EPIC FAIL DO THE CIRCLE
         }
+    }else if(questionData.answerType == "pickOneEnd"){
+
+    }else if(questionData.answerType == "none"){
+
     }
     if(id == 2){
         CreateGameFieldForYear(year+1, 0);
